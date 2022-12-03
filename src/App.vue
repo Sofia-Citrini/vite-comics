@@ -2,18 +2,20 @@
 
 <template>
   <TheHeader></TheHeader>
+  <TheFooter></TheFooter>
   
 </template>
 
 <script>
-import TheHeader from './components/TheHeader.vue';
+  import TheHeader from './components/TheHeader.vue';
+  import TheFooter from './components/TheFooter.vue';
 
   export default{
     data() {
     },
     methods: {},
-    components: { TheHeader }
-}
+    components: { TheHeader, TheFooter }
+  }
 </script>
 
 <style lang="scss">
