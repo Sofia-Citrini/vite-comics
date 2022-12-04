@@ -23,6 +23,7 @@
   export default{
     components: { TheHeader, TheFooter, BannerFooter, BannerInfo },
     data() {
+      return{}
     },
     methods: {},
   }

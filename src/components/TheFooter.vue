@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-4 py-3">
                     <div class="row">
-                        <div class="col-4 d-flex flex-column justify-content-between">
+                        <div class="col col-md-4 d-flex flex-column justify-content-between">
                             <div>
                                 <h6>DC COMICS</h6>
                                 <ul>
@@ -26,7 +26,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col col-md-4">
                             <h6>DC</h6>
                             <ul>
                                 <li><a href="#">Terms Of Use</a></li>
@@ -42,7 +42,7 @@
                                 <li><a href="#">Contact Us</a></li>
                             </ul>
                         </div>
-                        <div class="col-4">
+                        <div class="col col-md-4">
                             <h6>SITIES</h6>
                             <ul>
                                 <li><a href="#">DC</a></li>
@@ -67,7 +67,7 @@
 <script>
     export default{
         data (){
-
+            return
         },
         methods: {
             
@@ -80,7 +80,7 @@
 
     footer{
         background-image: url("/imgs/footer-bg.jpg");
-        height: 400px ;
+        background-size: cover;
     }
 
     h6{
