@@ -80,7 +80,7 @@
 
     footer{
         background-image: url("/imgs/footer-bg.jpg");
-        // height: 400px ;
+        height: 400px ;
     }
 
     h6{
