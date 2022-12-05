@@ -1,5 +1,5 @@
 <template>
-  <TheHeader></TheHeader>
+  <TheHeader :menu="menuList"></TheHeader>
 
   <main>
     <SeriesList></SeriesList>
@@ -22,7 +22,20 @@
   export default{
     components: { TheHeader, TheFooter, BannerFooter, BannerInfo, SeriesList },
     data() {
-      return{}
+      return{
+        menuList:[
+          "charachters",
+          "comics",
+          "movies",
+          "tv",
+          "games",
+          "collectibles",
+          "videos",
+          "fans",
+          "news",
+          "shop"
+        ]
+      }
     },
     methods: {},
   }

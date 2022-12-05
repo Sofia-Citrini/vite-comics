@@ -11,7 +11,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="#" v-for="element in menuList">{{element}}</a>
+                        <a class="nav-item nav-link" href="#" v-for="element in menu">{{element}}</a>
                         <!-- <a class="nav-item nav-link" href="#">characters</a>
                         <a class="nav-item nav-link" href="#">comics</a>
                         <a class="nav-item nav-link" href="#">movies</a>
@@ -31,25 +31,9 @@
 
 <script>
     export default{
-        data (){
-            return{
-                menuList:[
-                    "charachters",
-                    "comics",
-                    "movies",
-                    "tv",
-                    "games",
-                    "collectibles",
-                    "videos",
-                    "fans",
-                    "news",
-                    "shop"
-                ]
-            }
+        props:{
+            menu:Array
         },
-        methods: {
-            
-        }
     }
 </script>
 

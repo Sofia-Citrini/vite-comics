@@ -8,48 +8,27 @@
                             <div>
                                 <h6>DC COMICS</h6>
                                 <ul>
-                                    <li><a href="#">Charachters</a></li>
-                                    <li><a href="#">Comics</a></li>
-                                    <li><a href="#">Movies</a></li>
-                                    <li><a href="#">Tv</a></li>
-                                    <li><a href="#">Games</a></li>
-                                    <li><a href="#">Videos</a></li>
-                                    <li><a href="#">News</a></li>
+                                    <li v-for="link in comicsLinks"><a :href="link.url">{{link.text}}</a></li>
                                 </ul>
                             </div>
 
                             <div>
                                 <h6>SHOP</h6>
                                 <ul>
-                                    <li><a href="#">Shop DC</a></li>
-                                    <li><a href="#">Shop DC Collection</a></li>
+                                    <li v-for="link in shopLinks"><a :href="link.url">{{link.text}}</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col col-md-4">
                             <h6>DC</h6>
                             <ul>
-                                <li><a href="#">Terms Of Use</a></li>
-                                <li><a href="#">Privacy policy (new)</a></li>
-                                <li><a href="#">Ad Choices</a></li>
-                                <li><a href="#">Advertising</a></li>
-                                <li><a href="#">Jobs</a></li>
-                                <li><a href="#">Subscriptions</a></li>
-                                <li><a href="#">Talent Workshop</a></li>
-                                <li><a href="#">CPSC Certifications</a></li>
-                                <li><a href="#">Rating</a></li>
-                                <li><a href="#">Shop Help</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li v-for="link in dcLinks"><a :href="link.url">{{link.text}}</a></li>
                             </ul>
                         </div>
                         <div class="col col-md-4">
                             <h6>SITIES</h6>
                             <ul>
-                                <li><a href="#">DC</a></li>
-                                <li><a href="#">MAD Magazine</a></li>
-                                <li><a href="#">DC Kids</a></li>
-                                <li><a href="#">DC Universe</a></li>
-                                <li><a href="#">DC Power Visa</a></li>
+                                <li v-for="link in sitiesLinks"><a :href="link.url">{{link.text}}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -65,14 +44,18 @@
 </template>
 
 <script>
+    import { footerComicsLinks, footerShopLinks, footerDcLinks, footerSitiesLinks} from "../composables/footerLinks";
+
     export default{
-        data (){
-            return
-        },
-        methods: {
-            
+       data (){
+        return {
+            comicsLinks: footerComicsLinks,
+            shopLinks: footerShopLinks,
+            dcLinks: footerDcLinks,
+            sitiesLinks: footerSitiesLinks
+        }
+       }
     }
-}
 </script>
 
 <style scoped lang="scss">
