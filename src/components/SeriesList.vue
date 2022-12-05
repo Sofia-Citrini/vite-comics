@@ -5,15 +5,19 @@
         </div>
 
         <div class="container">
-            <div>
+            <div class="title">
                 <h3>CURRENT SERIES</h3>
             </div>
 
-            <div class="row">
+            <div class="row my-4 gy-4 gx-3">
                 <div class="col-2" v-for="(serieEl, i) in seriesList" key="i">
                     <SerieItem :serie="serieEl"/>
                 </div>
             </div>
+        </div>
+
+        <div class="text-center py-3">
+            <button><small>load more</small></button>
         </div>
     </section>
 </template>
@@ -106,14 +110,39 @@
 </script>
 
 <style scoped lang="scss">
+    @use "../styles/partials/variables" as *;
+
+    section{
+        background-color: $color-secondary-dark;
+    }
+    .title{
+        margin: -1.2rem;
+
+        h3{
+            display: inline-block;
+            font-size: 1rem;
+            color: white;
+            padding: .5rem 1rem;
+            background-color: $color-primary;
+        }
+    }
     .jumbotron{
         height: 200px;
-        object-fit:cover;
 
         .img-block{
             display: block;
             height: 100%;
             width: 100%;
+            object-fit:cover;
+            object-position: top;
         }
+    }
+
+    button{
+        background-color: $color-primary;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        padding: .2rem 2rem;
     }
 </style>

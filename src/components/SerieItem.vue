@@ -1,9 +1,9 @@
 <template>
     <div class="my-card">
-        <div>
+        <div class="ratio ratio-1x1">
             <img :src="serie.thumb" alt="" class="img-fluid">
         </div>
-        <div>{{serie.series}}</div>
+        <div class="text-card">{{serie.series}}</div>
     </div>
 </template>
 
@@ -17,5 +17,15 @@
 </script>
 
 <style scoped lang="scss">
+   .img-fluid{
+    object-fit: cover;
+    object-position: top;
+   }
 
+   .text-card{
+    color: white;
+    font-size: x-small;
+    text-transform: uppercase;
+    padding: .5rem 0;
+   }
 </style>
