@@ -62,6 +62,9 @@
         color: $text-color;
         text-transform: uppercase;
         font-size: .8rem;
-        font-weight: bold;
+
+        &:hover{
+            color: $color-primary;
+        }
     }
 </style>

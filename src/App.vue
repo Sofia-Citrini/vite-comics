@@ -1,10 +1,8 @@
-
-
 <template>
   <TheHeader></TheHeader>
 
   <main>
-    <div class="content">Content</div>
+    <SeriesList></SeriesList>
   </main>
 
   <BannerInfo></BannerInfo>
@@ -19,9 +17,10 @@
   import TheFooter from './components/TheFooter.vue';
   import BannerFooter from './components/BannerFooter.vue';
   import BannerInfo from './components/BannerInfo.vue';
+  import SeriesList from './components/SeriesList.vue'
 
   export default{
-    components: { TheHeader, TheFooter, BannerFooter, BannerInfo },
+    components: { TheHeader, TheFooter, BannerFooter, BannerInfo, SeriesList },
     data() {
       return{}
     },

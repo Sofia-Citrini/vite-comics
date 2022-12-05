@@ -59,6 +59,7 @@
 
         .img-container{
             width: 2rem;
+            object-fit: contain;
         }
 
         .text{
@@ -72,7 +73,4 @@
             }
         }
     }
-    
-
-    
 </style>
